@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({ onRequestPilot }) => {
   return (
     <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-border shadow-subtle transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-[4.25rem]">
+        <div className="flex items-center justify-between h-18 sm:h-20">
           {/* Brand Wordmark - Logo square removed as requested */}
           <div className="flex items-center">
             <a
@@ -58,10 +58,10 @@ export const Header: React.FC<HeaderProps> = ({ onRequestPilot }) => {
             <button
               type="button"
               onClick={(e) => onRequestPilot(e.currentTarget)}
-              className="inline-flex items-center gap-2 px-4.5 py-2 text-sm font-semibold text-white bg-brand-teal hover:bg-brand-tealDark rounded-xl shadow-subtle hover:shadow transition-all focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 active:scale-[0.98]"
+              className="group inline-flex items-center gap-2.5 px-6 py-2.5 sm:px-7 sm:py-3 text-sm sm:text-base font-bold text-white bg-brand-teal hover:bg-brand-tealDark rounded-xl shadow-subtle hover:shadow transition-all focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 active:scale-[0.98]"
             >
               Request a Pilot
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="w-4.5 h-4.5 transition-transform group-hover:translate-x-0.5" />
             </button>
           </div>
 
@@ -106,10 +106,10 @@ export const Header: React.FC<HeaderProps> = ({ onRequestPilot }) => {
                 handleNavClick();
                 onRequestPilot(e.currentTarget);
               }}
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-brand-teal hover:bg-brand-tealDark rounded-xl shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-brand-teal"
+              className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3 text-base font-bold text-white bg-brand-teal hover:bg-brand-tealDark rounded-xl shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-brand-teal"
             >
               Request a Pilot
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
