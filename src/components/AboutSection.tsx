@@ -39,7 +39,9 @@ export const AboutSection: React.FC = () => {
     {
       name: 'Shiva Kumar Buthkuri',
       role: 'Co-founder',
-      description: 'Software & AI Developer',
+      expertise: 'Software Development & Quality Assurance',
+      description:
+        'Shiva holds an MSc in Computer Science from Ravensbourne University London and brings over five years of experience across digital banking technology support, quality assurance and financial services. His technical skills include Python, JavaScript, TypeScript, React, SQL and API integration, alongside hands-on experience building AI-powered web applications. His background in functional testing, user acceptance testing, defect investigation and data-protection procedures brings a practical focus on software reliability and usability to AMIE.',
     },
   ];
 
@@ -118,10 +120,17 @@ export const AboutSection: React.FC = () => {
                 }`}
               >
                 <div>
-                  <div className="flex items-start justify-between gap-3 mb-3">
-                    <h4 className="text-base sm:text-lg font-bold text-heading leading-snug">
-                      {founder.name}
-                    </h4>
+                  <div className="flex items-start justify-between gap-3 mb-3 min-h-[44px]">
+                    <div>
+                      <h4 className="text-base sm:text-lg font-bold text-heading leading-snug">
+                        {founder.name}
+                      </h4>
+                      {founder.expertise && (
+                        <p className="text-xs font-semibold text-brand-teal mt-0.5">
+                          {founder.expertise}
+                        </p>
+                      )}
+                    </div>
                     <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-brand-teal border border-teal-200/70 shrink-0">
                       {founder.role}
                     </span>
