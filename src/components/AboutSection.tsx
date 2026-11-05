@@ -41,7 +41,7 @@ export const AboutSection: React.FC = () => {
       role: 'Co-founder',
       expertise: 'Software Development & Quality Assurance',
       description:
-        'Shiva holds an MSc in Computer Science from Ravensbourne University London and brings over five years of experience across digital banking technology support, quality assurance and financial services. His technical skills include Python, JavaScript, TypeScript, React, SQL and API integration, alongside hands-on experience building AI-powered web applications. His background in functional testing, user acceptance testing, defect investigation and data-protection procedures brings a practical focus on software reliability and usability to AMIE.',
+        'Shiva holds an MSc in Computer Science from Ravensbourne University London and brings over five years of experience across digital banking technology support, quality assurance and financial services.',
     },
   ];
 
