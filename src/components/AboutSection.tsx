@@ -36,6 +36,11 @@ export const AboutSection: React.FC = () => {
       description:
         'Pharmaceutical postgraduate background and QC analyst experience involving finished-product testing, analytical instruments, investigations and laboratory documentation.',
     },
+    {
+      name: 'Shiva Kumar Buthkuri',
+      role: 'Co-founder',
+      description: 'Software & AI Developer',
+    },
   ];
 
   return (
@@ -102,18 +107,22 @@ export const AboutSection: React.FC = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {founders.map((founder) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {founders.map((founder, index) => (
               <div
                 key={founder.name}
-                className="bg-surface rounded-xl p-5 sm:p-6 border border-border shadow-subtle flex flex-col justify-between"
+                className={`bg-surface rounded-xl p-5 sm:p-6 border border-border shadow-subtle hover:shadow-card hover:-translate-y-0.5 transition-all flex flex-col justify-between h-full ${
+                  index === 2
+                    ? 'md:col-span-2 md:w-[calc(50%-0.625rem)] md:mx-auto lg:col-span-1 lg:w-full lg:mx-0'
+                    : ''
+                }`}
               >
                 <div>
-                  <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                    <h4 className="text-base sm:text-lg font-bold text-heading">
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h4 className="text-base sm:text-lg font-bold text-heading leading-snug">
                       {founder.name}
                     </h4>
-                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-brand-teal border border-teal-200/70">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-brand-teal border border-teal-200/70 shrink-0">
                       {founder.role}
                     </span>
                   </div>
